@@ -9,11 +9,12 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: black; }
+  background-color: #002642; 
+}
 
 html {
   width: 100%;
-  height: 100%; }
+  height: 90%; }
 
 h1,
 h2,
@@ -100,8 +101,8 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  background: url("https://i.imgur.com/766mvVt.jpg") no-repeat bottom center scroll;
+  background-color: #002642;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,8 +121,20 @@ a {
       .masthead .intro-body .brand-heading {
         font-size: 100px; }
       .masthead .intro-body .intro-text {
-        font-size: 22px; } }
-
+          font-size: 22px; } 
+}
+ul.link-social-buttons {
+  margin-top: 0; }
+  @media (max-width: 1199px) {
+    ul.link-social-buttons {
+      margin-top: 15px; } }
+  @media (max-width: 767px) {
+    ul.link-social-buttons li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0; }
+      ul.link-social-buttons li:last-child {
+        margin-bottom: 0; } }
 .btn-circle {
   font-size: 26px;
   width: 55px;
@@ -140,30 +153,86 @@ a {
     outline: none;
     background: rgba(255, 255, 255, 0.1); }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px; }
 
-.download-section {
+
+.content-section {
+   padding: 50px, 0;
+   
+}
+
+.about-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+
+
+.portfolio-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  background: url("https://i.imgur.com/xeifoMc.jpg") no-repeat center center scroll;
+  background-color: #002642;
+  height: 575px;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover; 
+}
 
-#map {
+.pumpkin:hover .overlay {
+  opacity: 2;
   width: 100%;
-  height: 300px; }
+  height: 100%;
+}
 
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px; }
-  #map {
-    height: 350px; } }
+.bolts:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
 
+.csharp:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.rps:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.rest:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1.5s ease;
+  background-color: rgba(252,251,243,.7);
+}
+
+.contact-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.humor-section {
+  margin-top: 50px;
+  height: 250px;
+}
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -174,7 +243,6 @@ a {
   border-radius: 0; }
 
 .btn-default {
-  color: #42DCA3;
   border: 1px solid #42DCA3;
   background-color: transparent; }
   .btn-default:focus, .btn-default:hover {
@@ -220,3 +288,7 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+.thumbnail {
+    border: 3px solid #ddd;
+}
